@@ -806,7 +806,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-gray-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(250 250 250 / var(--tw-bg-opacity));
+  background-color: rgb(255, 246, 233 / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -832,6 +832,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-coffee-brown {
   --tw-bg-opacity: 1;
   background-color: rgb(121 110 104 / var(--tw-bg-opacity));
+}
+
+.bg-royal-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(187, 226, 236 / var(--tw-bg-opacity));
 }
 
 .bg-gray-800 {
