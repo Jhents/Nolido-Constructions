@@ -1380,3 +1380,32 @@ Ensure the default browser behavior of the `hidden` attribute.
     display: block;
   }
 }
+/* For small screens */
+@media (max-width: 767px) {
+  h1 {
+    font-size: 4rem; /* Adjust as needed */
+  }
+  h2 {
+    font-size: 3rem; /* Adjust as needed */
+  }
+}
+
+/* For medium screens 
+@media (min-width: 768px) and (max-width: 1023px) {
+  h1 {
+    font-size: 5rem; 
+  } 
+  h2 {
+    font-size: 4rem; 
+  }
+}*/
+
+/* For large screens 
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 6rem;
+  }
+  h2 {
+    font-size: 5rem; 
+  }
+}*/
