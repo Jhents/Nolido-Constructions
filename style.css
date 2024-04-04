@@ -806,7 +806,7 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .bg-gray-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(255, 246, 233 / var(--tw-bg-opacity));
+  background-color: rgb(255 246 233 / var(--tw-bg-opacity));
 }
 
 .bg-blue-50 {
@@ -814,6 +814,33 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(158, 230, 249); */
   background: rgb(201,223,254);
 background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 100%);
+}
+
+
+.bg-grey-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(180, 180, 184);
+}
+
+
+.bg-darkblue-button {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 139 / var(--tw-bg-opacity));
+}
+
+.bg-lightdarkblue-button {
+  background-color: rgb(165, 186, 248);
+}
+
+/* rgb(255, 246, 233) */
+.bg-cream {
+  --tw-bg-opacity: 0.1;
+  background-color: rgb(255, 246, 233);
+}
+
+.bg-newcream {
+  --tw-bg-opacity: 0;
+  background-color: rgb(187, 226, 236);
 }
 
 .bg-white {
@@ -969,38 +996,38 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
 }
 
 .text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .text-9xl {
-  font-size: 8rem;
+  font-size: 7rem;
   line-height: 1;
 }
 
 .text-5xl {
-  font-size: 3rem;
+  font-size: 2.5rem;
   line-height: 1;
 }
 
 .text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+  font-size: 1.650rem;
+  line-height: 2.rem;
 }
 
 .text-7xl {
-  font-size: 4.5rem;
+  font-size: 4.25rem;
   line-height: 1;
 }
 
 .text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+  font-size: 2rem;
+  line-height: 2.25rem;
 }
 
 .text-xl {
-  font-size: 1.25rem;
-  line-height: 1.75rem;
+  font-size: 1rem;
+  line-height: 1.50rem;
 }
 
 .font-bold {
@@ -1026,6 +1053,11 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-gold {
+  --tw-text-opacity: 1;
+  color: rgb(255 242 204 / var(--tw-text-opacity));
 }
 
 .text-wood-brown {
@@ -1122,7 +1154,8 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-}
+  padding: 1rem;
+  }
 
 .card:hover {
   cursor: pointer;
@@ -1144,7 +1177,7 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 12rem;
+ padding-top: 12rem;
   padding-bottom: 12rem;
   width: 100%;
   height: 100%;
@@ -1198,6 +1231,29 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   --tw-bg-opacity: 1;
   background-color: rgb(48 39 36 / var(--tw-bg-opacity));
 }
+
+.hover\:border-wood-brown:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(48 39 36 / var(--tw-border-opacity));
+}
+
+.hover\:bg-wood-brown:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(48 39 36 / var(--tw-bg-opacity));
+}
+
+/* ADDED THIS FOR THE BUTTONS  */
+.hover\:border-royalblue:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(65 105 225 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-royalblue:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(65 105 225 / var(--tw-bg-opacity));
+}
+
+
 
 .hover\:px-11:hover {
   padding-left: 2.75rem;
@@ -1387,15 +1443,15 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
     display: block;
   }
 }
-/* For small screens 
+/* For small screens  */
 @media (max-width: 767px) {
   h1 {
-    font-size: 4rem;
+    font-size: 2rem;
   }
   h2 {
-    font-size: 3rem; 
+    font-size: 1.5rem; 
   }
-}*/
+}
 
 /* For medium screens 
 @media (min-width: 768px) and (max-width: 1023px) {
