@@ -635,8 +635,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 100vh;
 }
 
+.h-newscreen {
+  height: 60vh;
+}
+
 .h-full {
   height: 100%;
+}
+
+.h-80 {
+  height: 50%;
 }
 
 .h-24 {
@@ -752,6 +760,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: center;
 }
 
+.center-items {
+  display: flex;
+  justify-content: center; /* Horizontally center items */
+  align-items: center; /* Vertically center items */
+}
+
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
@@ -825,7 +839,7 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
 
 .bg-darkblue-button {
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 139 / var(--tw-bg-opacity));
+  background-color: rgb(14 22 111 / var(--tw-bg-opacity));
 }
 
 .bg-lightdarkblue-button {
@@ -915,6 +929,11 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
 .py-20 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py-10 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py-1 {
@@ -1060,10 +1079,23 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   color: rgb(255 242 204 / var(--tw-text-opacity));
 }
 
+
+.text-gold {
+  --tw-text-opacity: 1;
+  color: rgb(255 242 204 / var(--tw-text-opacity));
+}
+
 .text-wood-brown {
   --tw-text-opacity: 1;
   color: rgb(48 39 36 / var(--tw-text-opacity));
 }
+
+.text-darkblue {
+  --tw-text-opacity: 1;
+  color: rgb(14 22 111 / var(--tw-text-opacity));
+}
+
+
 
 .antialiased {
   -webkit-font-smoothing: antialiased;

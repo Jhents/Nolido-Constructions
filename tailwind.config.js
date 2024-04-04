@@ -31,7 +31,7 @@ module.exports = {
           'royalblue': '#4169e1', 
           'blue': '#0000FF',
           'lightblue': '#ADD8E6',
-          'darkblue': '#00008B',
+          'darkblue': '##0e166f',
           gray: colors.neutral, 
       },
     },
