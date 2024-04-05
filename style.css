@@ -211,6 +211,12 @@ select {
 2. Remove default button styles.
 */
 
+.servicescontainer {
+  display: flex;
+  justify-content: between; /* Using justify-between instead of justify-center */
+  flex-wrap: wrap; /* This enables wrapping of flex items */
+}
+
 button,
 [type='button'],
 [type='reset'],
@@ -748,6 +754,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   flex-direction: column;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .items-center {
   align-items: center;
 }
@@ -758,6 +768,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .justify-center {
   justify-content: center;
+}
+
+
+.justify-between {
+  justify-content: space-between;
 }
 
 .center-items {
@@ -1423,6 +1438,7 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   .md\:justify-between {
     justify-content: space-between;
   }
+
 
   .md\:p-7 {
     padding: 1.75rem;

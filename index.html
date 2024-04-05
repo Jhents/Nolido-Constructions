@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <!--Key for terminal to start tailwind watching: -->
+
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <!-- npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch (Use Shift + Ctrl + V to paste)-->
 
     <meta charset="UTF-8" />
@@ -38,7 +40,7 @@
   <!--Testing Git push feature-->
 
   <body class="absolute mx-auto w-screen overflow-x-hidden">
-    <header class="">
+    <header class="bg-gray-200">
       <!--Navbar-->
       <nav
         data-aos="fade-down"
@@ -130,14 +132,14 @@
               
             >
               Roosevelt, QC.
-            </h2> -->
+            </h2> --> 
 
             <a
               href="contact.html"
               data-aos=""
               data-aos-duration="1000"
               data-aos-delay=""
-              class="mx-auto border-2 border-none bg-darkblue-button py-2 px-5 text-center tracking-wide text-gold shadow-xl 
+              class="mx-auto border-2 border-white  py-2 px-5 text-center tracking-wide text-gold shadow-xl 
               transition-all duration-700 hover:border-royalblue hover:bg-royalblue hover:px-11 sm:px-10"
               >Book an Appointment</a
             >
@@ -206,7 +208,7 @@
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          class="bg-gray-800 py-6 text-white "
+          class="bg-gray-800 py-6 h-12 text-white "
         >
           <!-- <h1
             class="text-center font-['antic_didone'] mx-auto text-5xl font-bold tracking-wider md:pr-16 md:text-right"
@@ -215,7 +217,7 @@
           </h1> -->
 
           
-        </div>
+        </div> 
       </section>
 
 
@@ -312,10 +314,65 @@
         </div>
       </section> -->
 
+      <!-- SERVICES SECTION -->
 
+<section class="text-gray-600 body-font mb-12 ">
+  <div class="container px-5 mx-auto my-12">
+    <h1
+            data-aos="fade-down"
+            data-aos-duration="1000"
+            class="font-['antic_didone'] text-5xl font-bold my-14 text-darkblue center-items"
+          >
+            Services
+          </h1>
+    
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div class="p-4 md:w-1/3 sm:mb-0">
+        <div class="rounded-lg h-80 overflow-hidden">
+          <img alt="content" class="object-cover h-full w-full" src="images/Services1.webp">
+        </div>
+        <h2 class="font-['antic_didone'] text-2xl font-semibold mb-4 center-items text-darkblue my-3">General Construction</h2>
+        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+        <a class="text-yellow-500 inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0">
+        <div class="rounded-lg h-80 overflow-hidden">
+          <img alt="content" class="object-coverh-full w-full" src="images/Services2.webp">
+        </div>
+        <h2 class="font-['antic_didone'] text-2xl font-semibold mb-4 center-items text-darkblue my-3">Design</h2>
+        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+        <a class="text-yellow-500 inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0">
+        <div class="rounded-lg h-80 overflow-hidden">
+          <img alt="content" class="object-cover object-right-top h-full w-full" src="images/Services3.webp">
+        </div>
+       <h2 class="font-['antic_didone'] text-2xl font-semibold mb-4 center-items text-darkblue my-3">Construction Management</h2>
+        <p class="text-base leading-relaxed mt-2">Swag shoivdigoitch literally meditation subway tile tumblr cold-pressed. Gastropub street art beard dreamcatcher neutra, ethical XOXO lumbersexual.</p>
+        <a class="text-yellow-500 inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- 
 
       <section class="services mb-12">
-        <div class="mx-auto justify-center flex w-5/6 flex-col py-0 ">
+        <div id="servicescontainer" class="mx-auto justify-between">
           <h1
             data-aos="fade-down"
             data-aos-duration="1000"
@@ -323,31 +380,35 @@
           >
             Services
           </h1>
-          <div class="flex flex-wrap justify-between">
-            <div class="service-column">
+          
+          <div class="flex flex-wrap justify-between center-items mx-auto align-middle gap-5 ">
+            <div class="service-column py-2">
               <img src="images/Services1.webp" alt="Service 1">
-              <h2 class="text-3xl font-semibold mb-4">General Construction</h2>
-              <p class="text-xl text-wood-brown">
+              <h2 class="font-['antic_didone'] text-2xl font-semibold mb-4 center-items text-darkblue my-3">General Construction</h2>
+              <p class="text-xl text-wood-brown text-justify w-full">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vestibulum.
-              </p>
+            </p>
+
+            
             </div>
-            <div class="service-column">
+            
+            <div class="service-column py-2 ">
               <img src="images/Services2.webp" alt="Service 2" >
-              <h2 class="text-3xl font-semibold mb-4">Design</h2>
+              <h2 class="font-['antic_didone'] text-2xl font-semibold mb-4 center-items text-darkblue my-3">Design</h2>
               <p class="text-xl text-wood-brown">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               </p>
             </div>
-            <div class="service-column">
+            <div class="service-column py-2">
               <img src="images/Services3.webp" alt="Service 3" >
-              <h2 class="text-3xl font-semibold mb-4">Construction Management</h2>
+              <h2 class="font-['antic_didone'] text-2xl font-semibold mb-4 center-items text-darkblue my-3">Construction Management</h2>
               <p class="text-xl text-wood-brown">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               </p>
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
       
 
       
@@ -356,7 +417,7 @@
         <div
           data-aos="fade-up"
           data-aos-duration="1000"
-          class="bg-gray-800 py-6 text-white md:w-4/5"
+          class="bg-gray-800 py-6 text-white "
         >
           <h1
             class="text-center font-['antic_didone'] text-5xl font-semibold tracking-wider md:pr-16 md:text-right"
