@@ -6,6 +6,9 @@
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
 */
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 *,
 ::before,
@@ -884,7 +887,7 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
 
 .bg-gray-700 {
   --tw-bg-opacity: 1;
-  background-color: rgb(64 64 64 / var(--tw-bg-opacity));
+  background-color: rgb(64 64 64 / var(--tw-bg-opacity)) !important;
 }
 
 .bg-gray-300 {
