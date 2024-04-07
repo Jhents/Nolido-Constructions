@@ -1,15 +1,8 @@
-# CONCEPT Static Luxury Real Estate Team website 
 
-## LIVE on Github pages @ esotuvaka.github.io/Lorem-Partners
 
 ### Built with HTML5, TailwindCSS, Data-AOS JavaScript Scroll-based animation library
 
 My first fully fleshed out website, this enhanced my interest in coding and introduced me to a lot of best practices, SEO, and improving performance by using Chrome DevTools and Lighthouse. Looking back on it now some parts of it are clunky and images are at too high of a resolution, causing stuttering, but for a first site built from scratch I'm quite proud of it, especially the aesthetics and animations in the contact page.
-
-## CHALLENGES + SOLUTIONS:
-
-CURRENTLY index.html in the root will reroute to esotuvaka.github.io/index.html (portfolio page), rather than to esotuvaka.github.io/Lorem-Partners/index.html !!!
-MUST FIX ASAP
 
 Learning Tailwind
 
