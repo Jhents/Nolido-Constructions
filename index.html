@@ -19,7 +19,7 @@
       maximum-scale=1, user-scalable=no">
 
       <link rel="icon" href="images\NolidoLogo.JPG" type="image/x-icon">
-
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@^2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/keen-slider.min.css" rel="stylesheet" />
@@ -154,15 +154,15 @@
       <div class="mx-auto justify-center flex  flex-col py-10 w-5/6
               sm:px-5" id="info">
         <h1 data-aos="fade-down" data-aos-duration="1000" class="mb-12 font-['antic_didone'] text-5xl font-bold
-                justify-center text-darkblue center-items">
-          Welcome to R.A. Nolido Construction
+                 text-darkblue text-center center-items">
+          Welcome to R.A. Nolido Construction Corporation
         </h1>
 
 
 
 
         <p data-aos="fade-right" data-aos-duration="1000" class="mx-auto mb-9 tracking-normal
-                text-gray-500 text-xl leading-relaxed mt-2">
+                text-gray-500 text-xl leading-relaxed mt-2 text-center">
           With the expertice of our Management Team, our highly competent
           staff of licensed and experienced Engineers, and equally
           reliable support staff of Accountants and Managers,
@@ -183,12 +183,12 @@
 
 
     <section class="mx-auto">
-      <div data-aos="fade-up" data-aos-duration="1000" class="bg-gray-800 py-6 h-12 text-white ">
-        <!-- <h1
+      <div data-aos="fade-up" data-aos-duration="1000" class="bg-gray-800 py-6 text-white ">
+        <h1
             class="text-center font-['antic_didone'] mx-auto text-5xl font-bold tracking-wider md:pr-16 md:text-right"
           >
             Services Offered
-          </h1> -->
+          </h1>
       </div>
     </section>
 
@@ -287,10 +287,10 @@
 
     <section class="text-gray-500 body-font mb-12 ">
       <div class="container px-5 mx-auto my-12">
-        <h1 data-aos="fade-down" data-aos-duration="1000" class="font-['antic_didone'] text-5xl font-bold my-14
+        <!-- <h1 data-aos="fade-down" data-aos-duration="1000" class="font-['antic_didone'] text-5xl font-bold my-14
                 text-darkblue center-items">
           Services
-        </h1>
+        </h1> -->
 
         <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
           <div class="p-4 md:w-1/3 sm:mb-0">
@@ -447,7 +447,7 @@
       </div>
 
        <!-- NEW GALLERY -->
-
+<!-- 
       <div id="gallery-container" class="flex w-screen justify-center pb-12">
         <div id="gallery" class="flex w-screen flex-col pt-8 md:flex-row">
           <div id="card" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1000" class="card basis-1/4"
@@ -491,8 +491,36 @@
               py-2 text-2xl text-gold shadow-md transition-all duration-700
               hover:bg-royalblue hover:text-white md:w-1/4 md:text-3xl">PROPERTIES
         GALLERY</a>
+    </section> -->
+<section class="carouselsection">
+    <div class="containercarousel">
+      <div class="slider-wrapper">
+      <button id="prev-slide" class="slide-button material-symbols-rounded">
+      chevron_left
+      </button>
+      <ul class="image-list">
+      <img class="image-item my-custom-img" src="images/carousel1.jpg" alt="img-1" />
+      <img class="image-item my-custom-img" src="images/carousel2.jpg" alt="img-2" />
+      <img class="image-item my-custom-img" src="images/carousel3.jpg" alt="img-3" />
+      <img class="image-item my-custom-img" src="images/carousel4.jpg" alt="img-4" />
+      <img class="image-item my-custom-img" src="images/carousel5.jpg" alt="img-5" />
+      <img class="image-item my-custom-img" src="images/carousel6.jpg" alt="img-6" />
+      <img class="image-item my-custom-img" src="images/carousel7.jpg" alt="img-7" />
+      <img class="image-item my-custom-img" src="images/carousel8.jpg" alt="img-8" />
+       <img class="image-item my-custom-img" src="images/carousel9.jpg" alt="img-978" /> 
+       <img class="image-item my-custom-img" src="images/carousel10.jpg" alt="img-10" />
+      </ul>
+      <button id="next-slide" class="slide-button material-symbols-rounded">
+      chevron_right
+      </button>
+      </div>
+      <div class="slider-scrollbar">
+      <div class="scrollbar-track">
+      <div class="scrollbar-thumb"></div>
+      </div>
+      </div>
+      </div>
     </section>
-
     <!-- <section id="partners" class="mx-auto my-14 h-auto w-4/5 border-y-2 border-black
             object-contain md:mb-40 md:flex">
       <div class="mx-auto w-4/5">
@@ -871,8 +899,7 @@
       <div class="mt-12 flex h-96 w-screen items-center justify-center
               space-x-8 bg-gray-700 bg-cover bg-fixed bg-center bg-no-repeat
               text-white bg-blend-overlay md:px-40" style="
-              background-image: url('./images/scott-webb-hDyO6rr3kqk-unsplash\
-              \(1\).jpg');
+              background-image: url('images/scott-webb.jpg');
               ">
         <section class="text-center lg:block">
           <p data-aos="fade-up" data-aos-duration="1000" class="px-8 pb-8 md:px-0">
@@ -1054,44 +1081,6 @@
     });
   </script>
 
-
-<script type="module">
-  import KeenSlider from 'https://cdn.jsdelivr.net/npm/keen-slider@6.8.6/+esm'
-
-  const keenSlider = new KeenSlider(
-    '#keen-slider',
-    {
-      loop: true,
-      slides: {
-        origin: 'center',
-        perView: 1.25,
-        spacing: 16,
-      },
-      breakpoints: {
-        '(min-width: 1024px)': {
-          slides: {
-            origin: 'auto',
-            perView: 1.5,
-            spacing: 32,
-          },
-        },
-      },
-    },
-    []
-  )
-
-  const keenSliderPrevious = document.getElementById('keen-slider-previous')
-  const keenSliderNext = document.getElementById('keen-slider-next')
-
-  const keenSliderPreviousDesktop = document.getElementById('keen-slider-previous-desktop')
-  const keenSliderNextDesktop = document.getElementById('keen-slider-next-desktop')
-
-  keenSliderPrevious.addEventListener('click', () => keenSlider.prev())
-  keenSliderNext.addEventListener('click', () => keenSlider.next())
-
-  keenSliderPreviousDesktop.addEventListener('click', () => keenSlider.prev())
-  keenSliderNextDesktop.addEventListener('click', () => keenSlider.next())
-</script>
 
 </body>
 
