@@ -880,6 +880,11 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-newwhite {
+  --tw-bg-opacity: .6;
+  background-color: rgba(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-wood-brown {
   --tw-bg-opacity: 1;
   background-color: rgb(48 39 36 / var(--tw-bg-opacity));
@@ -1578,6 +1583,7 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   /* custom.css */
 .my-custom-img {
   /* Your custom styles here */max-width: 325px;
+  max-height: 325px;
 }
   
   .slider-wrapper .image-list {
@@ -1598,7 +1604,7 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   .slider-wrapper .image-list .image-item {
   width: 325px !important;
   height: 400px  !important;
-  object-fit: cover;
+  object-fit: scale-down;
   }
   
   .container .slider-scrollbar {

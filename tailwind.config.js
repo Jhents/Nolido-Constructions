@@ -24,7 +24,7 @@ module.exports = {
           'cream': '#dad7d2',
           'wood-brown': '#302724',
           'coffee-brown': '#796e68',
-          'white': '#fff',
+          'white': '#FFFFFF',
           'leaf-green': '#62762e',
           'gold': '#fff2cc',
           'black': '#000000',
