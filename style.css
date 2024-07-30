@@ -1583,7 +1583,16 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   /* custom.css */
 .my-custom-img {
   /* Your custom styles here */max-width: 325px;
-  max-height: 325px;
+  height: 325px;
+  object-fit: cover;
+  display: block;
+}
+
+.featured-img {
+
+  height: 325px;
+  object-fit: fill;
+
 }
 
   .slider-wrapper .image-list {
@@ -1604,7 +1613,7 @@ background: linear-gradient(90deg, rgba(201,223,254,1) 0%, rgba(117,236,255,1) 1
   .slider-wrapper .image-list .image-item {
   width: 325px !important;
   height: 400px  !important;
-  object-fit: scale-down;
+  object-fit: cover;
   }
   
   .container .slider-scrollbar {
